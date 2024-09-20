@@ -179,7 +179,6 @@ class Fat8:
         self.data_blocks = self._actual_data_block_size()
         self.size = self.fs_size()
 
-        # zapis boot bloku na disk
         # write boot block to virtual drive
         self._write_boot_block(self._convert_boot_block_to_bin())
         # set FAT block
